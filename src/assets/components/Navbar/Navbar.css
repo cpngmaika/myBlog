@@ -1,0 +1,106 @@
+/* Container chính */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  padding-top: 60px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f9fa;
+  position: relative;
+  box-shadow: 0 0 9px 6px rgba(0, 0, 0, 0.05);
+  height: 72px;
+  border-bottom: 1px dashed #dddddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* để nổi lên trên */
+}
+
+/* Brand bên trái */
+.nav-brand {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  padding: 12px 80px;
+  background-color: #0abec5;
+
+  display: flex;
+  align-items: center;
+  height: 100%; 
+}
+
+/* Menu nằm giữa */
+.nav-menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  list-style: none;
+  gap: 72px;
+  padding: 0;
+  margin: 0;
+  padding: 12px 24px;
+  font-size: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  color: #565a89;
+}
+
+/* Search bên phải */
+.nav-search {
+  display: flex;
+  gap: 8px;
+  padding: 12px 24px;
+}
+
+.nav-search input {
+  padding: 6px 10px;
+}
+
+.nav-search button {
+  padding: 6px 12px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.2s ease;
+}
+
+.nav-search button:hover {
+  border-color: #4b5082;
+  color: #4b5082;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 997px) {
+  .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-brand {
+    width: 100%;       /* <-- chiếm hết chiều ngang */
+    text-align: center; /* tuỳ chọn, nếu muốn chữ vào giữa */
+  }
+
+  .nav-menu {
+    position: static;
+    transform: none;
+    margin-top: 12px;
+  }
+
+  .nav-search {
+    margin-top: 12px;
+  }
+}
