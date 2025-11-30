@@ -3,7 +3,6 @@ import "./Sidebar.css";
 import avatar from "../../../image/MyAvatar.jpg";
 import TabButton from "../TabButton";
 import { TEAM } from "../../../../teamData";
-import AddNews from "./AddNews";
 
 function Sidebar() {
   const [selectedTopic, setSelectedTopic] = useState();
@@ -42,7 +41,7 @@ function Sidebar() {
 
         {/* Team selector */}
         <div className="side-team">
-          <h2 className="side-team__title">Members</h2>
+          <h2>Members</h2>
 
           {/* Buttons container */}
           <div className="side-team__tabs">
@@ -92,8 +91,6 @@ function Sidebar() {
             <p>Chọn nút bấm để xem thành viên</p>
           )}
         </div>
-
-        <AddNews/>
 
       </div>
     </>
