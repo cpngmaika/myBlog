@@ -1,0 +1,154 @@
+.side-container {
+  width: 18%;
+  height: 1200px;
+  /* background-color: #fefefe; */
+  margin: 48px 48px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  flex-direction: column;
+  display: flex;
+  gap: 24px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.side-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.side-profile__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #363875;
+}
+
+.side-profile__avatar {
+  display: block;
+  margin: 0 auto 8px auto;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.side-profile__dsc {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.side-profile__social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+menu.side-profile__social {
+  margin: 0;
+  padding: 0;
+}
+
+.TabButton {
+  text-decoration: none;
+}
+
+.side-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+}
+
+.side-team__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #363875;
+}
+
+.side-team__tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.side-team__member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.side-team__avatar {
+  display: block;
+  margin: 0 auto 8px auto;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.side-team__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #363875;
+}
+
+.side-team__dsc {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #555;
+}
+
+@media screen and (max-width: 997px) {
+  .side-container {
+    display: none;
+  }
+}
+
+.side-team__tabs li {
+  list-style: none;
+}
+
+.side-team__tabs button {
+  margin: 2px;
+  padding: 8px 4px;
+  border: none;
+  background: #f0f1f8;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4b5082;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.side-team__tabs button:hover {
+  background: #dcdff0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(75, 80, 130, 0.25);
+}
+
+.side-team__tabs button.active {
+  background: #4b5082;
+  color: #fff;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(75, 80, 130, 0.45);
+}
